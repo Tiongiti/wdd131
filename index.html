@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - [Your Name]</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, [Your Full Name], [Keywords related to content]">
-    <meta name="author" content="[Your Full Name]">
+    <title>WDD 131: Dynamic Web Fundamentals - Tiongiti Tioti</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, [Your Name], [Keywords]">
+    <meta name="author" content="[Your Name]">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to WDD 131 - Dynamic Web Fundamentals</h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">[Your Name]</span></h1>
         <nav>
             <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a>
-            <a href="#final-project">Final Project</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <section class="card">
-            <h2>Section 1 Heading</h2>
-            <img src="images/your-image1.jpg" alt="Description of Image 1">
-            <p>Content for Section 1, including resources or additional information.</p>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <p>My name is [Your Name]. I was born in [Country] and currently live in [Location]. I work as [Your Job Role]. I enjoy [Your Interests].</p>
+            <img src="images/your-photo.jpg" alt="Your photo">
         </section>
-        
-        <section class="card">
-            <h2>Section 2 Heading</h2>
-            <img src="images/your-image2.jpg" alt="Description of Image 2">
-            <p>Content for Section 2, with relevant links or descriptions.</p>
+
+        <section class="card location">
+            <h2>Kiritimati, Kiribati</h2>
+            <div class="location-content">
+                <img src="images/flag.jpg" alt="Official Flag of [Country]">
+                <p>Kiritimati is part of Kiribati located in the Line and phonex group. </p>
+            </div>
+        </section>
+
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; <span id="currentyear"></span> Tiongiti Tioti, Kiritimati, Kiribati</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="currentyear"></span> Tiongiti| Kiritimati, Kiribati</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
 </body>
 </html>
