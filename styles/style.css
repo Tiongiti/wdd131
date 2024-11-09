@@ -37,6 +37,7 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
+    padding: 0.25rem 0.5rem;
 }
 
 nav a:hover {
@@ -57,14 +58,38 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     max-width: 300px;
+    min-width: 200px;
 }
 
-.about-me img {
+/* Profile Image Styling */
+.profile-image {
     width: 100%;
     border-radius: 8px;
     margin-top: 1rem;
 }
 
+/* Divider Line Styling */
+.section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1.5rem 0;
+}
+
+/* Country Info Section Styling */
+.country-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.flag-image {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Location Section */
 .location-content {
     display: flex;
     align-items: center;
@@ -76,24 +101,26 @@ main {
     border-radius: 4px;
 }
 
-.resources ul {
+/* Web Resources Section */
+.web-resources ul {
     list-style: none;
     padding: 0;
 }
 
-.resources ul li {
+.web-resources ul li {
     margin: 0.5rem 0;
 }
 
-.resources ul li a {
+.web-resources ul li a {
     color: #3333cc;
     text-decoration: none;
 }
 
-.resources ul li a:hover {
+.web-resources ul li a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     background-color: #787676;
     color: white;
@@ -108,5 +135,16 @@ footer p {
 
 #lastModified {
     color: #FFD700;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 90%;
+    }
 }
