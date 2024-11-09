@@ -42,7 +42,8 @@ body {
     gap: 20px;
 }
 
-.about-me, .resources {
+.about-me,
+.resources {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
@@ -50,7 +51,8 @@ body {
     width: 45%;
 }
 
-.about-me h2, .resources h2 {
+.about-me h2,
+.resources h2 {
     background-color: #2d3e50;
     color: #fff;
     padding: 10px;
@@ -58,14 +60,16 @@ body {
     text-align: center;
 }
 
-.about-content, .madagascar-info {
+.about-content,
+.madagascar-info {
     display: flex;
     align-items: center;
     gap: 20px;
     margin: 15px 0;
 }
 
-.about-content img, .madagascar-info img {
+.about-content img,
+.madagascar-info img {
     border-radius: 8px;
     width: 100px;
     height: auto;
@@ -93,7 +97,7 @@ body {
     font-size: 14px;
 }
 
-.footer p1{
+.footer p1 {
     margin: 5px 0;
     color: #eec640;
 }
