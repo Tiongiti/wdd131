@@ -6,11 +6,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #272727;
 }
 
 header {
-    background-color: #a1a2a9;
+    background-color: #787676;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -95,7 +95,7 @@ main {
 }
 
 footer {
-    background-color: #003366;
+    background-color: #787676;
     color: white;
     text-align: center;
     padding: 1rem;
