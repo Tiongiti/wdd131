@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131: Dynamic Web Fundamentals - Tiongiti Tioti</title>
-    <meta name="description" content="Web Design, Dynamic Web Fundamentals, Kiritimati Island, Tiongiti Tioti">
-    <meta name="author" content="Tiongiti Tioti">
+    <title>Dynamic Web Fundamentals</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
+
     <!-- Header Section -->
-    <header>
+    <header class="header">
         <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Tiongiti Tioti</span></h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a>
-            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="card about-me">
+    <!-- Navigation Links -->
+    <nav class="nav">
+        <a href="#">LinkedIn</a>
+        <a href="#">I-Learn</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="about-me">
             <h2>About Me</h2>
-            <p>My name is Tiongiti Tioti. I was born in [Country] and currently live in [Location]. I work as [Your Job
-                Role]. I enjoy [Your Interests].</p>
-            <img src="images/profile.jpg" alt="Photo of Tiongiti Tioti" class="profile-image">
-
-            <!-- Divider Line Below Profile Image -->
-            <hr class="section-divider">
-
-            <!-- Country Information Section -->
-            <div class="country-info">
-                <img src="images/kiribati_flag.png" alt="Flag of Kiribati" class="flag-image">
-                <p>Kiritimati is part of Kiribati, located in the Line and Phoenix Group. Known for its pristine beaches
-                    and unique wildlife, it offers a tranquil escape in the Pacific.</p>
+            <div class="about-content">
+                <p>Hello! My name is Tiongiti Tioti. I am from Kiritimati, Kiribati, a beautiful island in the Pacific. I am passionate about web design and development and currently studying WDD 131: Dynamic Web Fundamentals. I enjoy learning new technologies and creating projects that help me grow as a developer. Outside of coding, I love spending time with family and exploring the natural beauty of my island.</p>
+                <img src="images/profile.jpg" alt="Tiongiti">
+            </div>
+            <h3>Kiritimati, Kiribati</h3>
+            <div class="madagascar-info">
+                <img src="images/kiribati_flag.png" alt="Official Flag of Kiribati">
+                <p>Kiritimati or Christmas island,is the world largest coral atoll in the Pacific Ocean, part of Kiribati. Known for its rich wildlife and coral reef, it supports a small population focused on Fishing, Tourism, and copra production.</p>
             </div>
         </section>
 
-        <section class="card web-resources">
-            <h2>Web Resources</h2>
+        <aside class="resources">
+            <h2>Web Dev Resources</h2>
             <ul>
-                <li><a href="#" target="_blank">Dev.to Community</a></li>
-                <li><a href="#" target="_blank">Smashing Magazine</a></li>
-                <li><a href="#" target="_blank">CSS Tricks</a></li>
-                <li><a href="#" target="_blank">W3 Schools</a></li>
-                <li><a href="#" target="_blank">Udemy</a></li>
-                <li><a href="#" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
             </ul>
-        </section>
+        </aside>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Tiongiti Tioti | Kiritimati, Kiribati</p>
-        <p id="lastModified">Last Modification: </p>
+    <footer class="footer">
+        <p>©2024 Tiongiti Tioti | Kiritimati, Kiribati</p>
+        <p1>Last Modification: 01/09/2024 15:26:53</p1>
     </footer>
-</body>
 
+</body>
 </html>
