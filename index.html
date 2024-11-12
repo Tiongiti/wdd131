@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Web Fundamentals</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Tiongiti Tioti</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tiongiti Tioti, Web Design, and Development basics">
+    <meta name="author" content="Tiongiti Tioti">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -18,14 +20,15 @@
     <!-- Navigation Links -->
     <nav class="nav">
         <a href="https://www.linkedin.com/in/tiongiti-tioti-818176a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8MKGXB%2BcSJeOtUmF82qjrg%3D%3D">LinkedIn</a>
-        <a href="#">I-Learn</a>
-        <a href="#">Scripture</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
         <a href="#">Final Project</a>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
-        <section class="about-me">
+        <!-- About Me Section -->
+        <section class="card">
             <h2>About Me</h2>
             <div class="about-content">
                 <p>Hello! My name is Tiongiti Tioti. I am from Kiritimati, Kiribati, a beautiful island in the Pacific.
@@ -44,7 +47,8 @@
             </div>
         </section>
 
-        <aside class="resources">
+        <!-- Resources Section -->
+        <aside class="card">
             <h2>Web Dev Resources</h2>
             <ul>
                 <li><a href="#">Dev.to Community</a></li>
@@ -59,10 +63,11 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>©2024 Tiongiti Tioti | Kiritimati, Kiribati</p>
-        <p1>Last Modification: 01/09/2024 15:26:53</p1>
+        <p>©<span id="currentyear"></span> Tiongiti Tioti | Kiritimati, Kiribati</p>
+        <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
