@@ -1,8 +1,7 @@
-#menu {
-    display: flex;
-    justify-content: space-around;
-}
+// Get current year and set it in the footer
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
 
-#gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
+// Get last modified date and set it in the footer
+const lastModified = document.lastModified;
+document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;
