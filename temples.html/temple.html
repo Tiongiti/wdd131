@@ -8,15 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to CSS files -->
     <link rel="stylesheet" href="temples.css">
-    <link rel="stylesheet" href="temples-large.css" media="screen and min-width: 76px">
+    <link rel="stylesheet" href="temples-large.css" media="screen and (min-width: 768px)">
     
     <!-- JavaScript -->
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-       <h1>Temple</h1>
-        <nav>
+       <h1>Temple Album</h1>
+       <!-- Hamburger Menu -->
+       <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
@@ -24,24 +26,41 @@
                 <li><a href="#">Large</a></li>
                 <li><a href="#">Small</a></li>
             </ul>
-
         </nav>
     </header>
+
     <main>
         <h2>Temple Pictures</h2>
         <section id="gallery">
             <!-- Example Figure -->
             <figure>
-            
                 <img src="temples_image/tarawa_temple.jpg" alt="Tarawa Kiribati Temple">
-                <figcaption>Temple Name</figcaption>
+                <figcaption>Tarawa Kiribati Temple</figcaption>
             </figure>
-            <!-- Add 8 more figures as required -->
+            <!-- Add more figures as needed -->
         </section>
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span>. All Rights Reserved.</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+
+    <script>
+        // JavaScript for dynamic footer content
+        const yearSpan = document.getElementById('year');
+        const lastModifiedSpan = document.getElementById('lastModified');
+        
+        yearSpan.textContent = new Date().getFullYear();
+        lastModifiedSpan.textContent = document.lastModified;
+
+        // JavaScript for Hamburger Menu
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
