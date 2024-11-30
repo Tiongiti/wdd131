@@ -1,84 +1,105 @@
-/* General reset */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* General Reset */
+body, h1, h2, p, ul, li, a, img, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    position: relative;
-}
-
-.hamburger {
-    font-size: 1.5em;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: block;
-}
-
-#menu {
-    list-style: none;
+    background-color: #f4f4f4;
+    color: #333;
     padding: 0;
-    margin: 0;
-    display: none;
-    flex-direction: column;
-}
-
-#menu a {
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4a148c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-#menu a:hover {
-    background-color: #555;
-}
-
-/* Main */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-#gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-figure {
-    margin: 0;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-}
-
-figcaption {
     font-weight: bold;
-    margin-top: 5px;
-}
-
-/* Footer */
-footer {
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gallery Section */
+  main h2 {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+  }
+  
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  figure {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  figure img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #4a148c;
     color: white;
-}
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+
+  /* Ensure all images fit nicely */
+figure img {
+    width: 100%; /* Make images scale to fit their container */
+    height: auto; /* Keep aspect ratio */
+  }
+  
